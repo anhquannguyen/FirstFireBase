@@ -34,7 +34,7 @@ public class FCMService extends FirebaseMessagingService {
                 .setSmallIcon(R.mipmap.ic_launcher_round)
                 .setContentTitle(remoteMessage.getNotification().getTitle())
                 .setContentText(remoteMessage.getNotification().getBody())
-                .setAutoCancel(true)
+                .setAutoCancel(false)
                 .setSound(uri);
 
         NotificationManager notificationManager =

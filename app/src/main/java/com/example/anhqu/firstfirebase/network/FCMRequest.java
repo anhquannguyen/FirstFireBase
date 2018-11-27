@@ -9,5 +9,5 @@ public interface FCMRequest {
 
     @POST("tokenId")
     @FormUrlEncoded
-    Call<String> postToken(@Field("tokenId") String token);
+    Call<Void> postToken(@Field("tokenId") String token);
 }
